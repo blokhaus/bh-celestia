@@ -43,7 +43,7 @@ const SignUp = (props) => {
 					setIsModalOpen(true);
 				}
 			})
-			.catch(() => {});
+			.catch(() => { });
 	};
 
 	const handleModalClose = () => {
@@ -91,9 +91,11 @@ const SignUp = (props) => {
 							required
 						/>
 						{captchaError && <div style={{ color: "white", marginTop: "10px", marginBottom: "20px" }}>{captchaError}</div>}
-						<div className='mt-3'>
+						{/* 
+						<div className='mt-3'> 
 							<ReCAPTCHA sitekey={siteKey} ref={reCaptchaRef} onChange={onReCAPTCHAChange} asyncScriptOnLoad={asyncScriptOnLoad} />
 						</div>
+						*/}
 						<button type={"submit"} className={"button button-simple mt-3"}>
 							Subscribe
 						</button>
