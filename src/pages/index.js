@@ -20,8 +20,6 @@ import Seo from "../components/seo";
 import HomeHeroSection from "../components/sections/home-hero-section";
 
 import TwoColumnH2 from "../components/sections/two-column-h2";
-import lottiAnim1 from "../anim/trans-anim-1.json";
-import lottiAnim2 from "../anim/trans-anim-2.json";
 
 const IndexPage = () => {
 	const enableBackers = false;
@@ -47,8 +45,6 @@ const IndexPage = () => {
 							buttonPrimaryClass={"plausible-event-name=Build_Modular_Button-Homepage--Build_whatever_section"}
 							buttonSecondaryTitle={"Deploy"}
 							buttonSecondaryUrl={"/build#deploy"}
-							anim={lottiAnim2}
-							animVersion={2}
 						/>
 
 						<TwoColumnH2
@@ -62,8 +58,6 @@ const IndexPage = () => {
 							image={"graph-scale.png"}
 							buttonPrimaryTitle={"Learn Celestia"}
 							buttonPrimaryUrl={"/what-is-celestia/"}
-							anim={lottiAnim1}
-							animVersion={1}
 						/>
 
 						<section id={`${heroData.buttons[1]?.url.replace(/\s+/g, "-").toLowerCase()}`} className='explore-celestia'>
