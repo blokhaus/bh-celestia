@@ -1,166 +1,168 @@
-.roadmap-section{
+.roadmap-section {
 
-  .roadmap-container{
-    overflow:hidden;
-      padding-top: 20px;
-    @include media-breakpoint-down(md) {
+  .roadmap-container {
+    overflow: hidden;
+    padding-top: 20px;
+
+    @media (max-width: 767.98px) {
       padding-top: 8px;
     }
   }
-  .roadmap-items{
-    list-style:none;
-    width:1000%;
-    margin:0;
-    padding:0;
 
-    @include media-breakpoint-down(md) {
-      width:100%;
-      position:relative;
+  .roadmap-items {
+    list-style: none;
+    width: 1000%;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 767.98px) {
+      width: 100%;
+      position: relative;
     }
 
-    .roadmap-item{
-      width:2.25%;
-      float:left;
+    .roadmap-item {
+      width: 2.25%;
+      float: left;
 
-      @include media-breakpoint-down(md) {
-        width:100%;
-        float:none;
+      @media (max-width: 767.98px) {
+        width: 100%;
+        float: none;
       }
 
-      &:nth-child(2n+0){
-        margin-top:200px;
-        padding-top:85px;
+      &:nth-child(2n+0) {
+        margin-top: 200px;
+        padding-top: 85px;
 
-        @include media-breakpoint-down(lg) {
-          margin-top:175px;
+        @media (max-width: 991.98px) {
+          margin-top: 175px;
         }
 
-        @include media-breakpoint-down(md) {
-          margin-top:unset;
-          padding-top:unset;
+        @media (max-width: 767.98px) {
+          margin-top: unset;
+          padding-top: unset;
         }
 
-        .box{
-          top:-25px;
+        .box {
+          top: -25px;
 
-          @include media-breakpoint-down(md) {
-            top:unset;
-            padding-top:8px;
+          @media (max-width: 767.98px) {
+            top: unset;
+            padding-top: 8px;
           }
         }
 
-        .circle{
-          top:0;
+        .circle {
+          top: 0;
 
-          &:before{
-            height:1px;
-            max-width:430%;
-            width:17vw;
-            content:'';
-            position:absolute;
-            transform:translateX(-100%) rotate(20deg);
+          &:before {
+            height: 1px;
+            max-width: 430%;
+            width: 17vw;
+            content: '';
+            position: absolute;
+            transform: translateX(-100%) rotate(20deg);
             left: 18px;
             top: -20px;
-            z-index:0;
-            border-bottom:1px solid #000;
+            z-index: 0;
+            border-bottom: 1px solid #000;
 
-            @include media-breakpoint-down(xl) {
-              width:17vw;
+            @media (max-width: 1199.98px) {
+              width: 17vw;
               transform: translateX(-100%) rotate(24deg);
-              left:10px;
+              left: 10px;
             }
 
-            @include media-breakpoint-down(lg) {
-              width:15vw;
-              left:10px;
-              top:-10px;
+            @media (max-width: 991.98px) {
+              width: 15vw;
+              left: 10px;
+              top: -10px;
             }
 
-            @include media-breakpoint-down(md) {
-              display:none;
+            @media (max-width: 767.98px) {
+              display: none;
             }
 
           }
         }
       }
 
-      &:nth-child(2n+1){
+      &:nth-child(2n+1) {
 
-        .box{
-          @include media-breakpoint-down(md) {
-            padding-top:8px;
+        .box {
+          @media (max-width: 767.98px) {
+            padding-top: 8px;
           }
         }
 
-        .circle{
+        .circle {
 
-          &:before{
-            height:1px;
-            width:420%;
-            content:'';
-            position:absolute;
-            transform:translateX(-100%) rotate(-20deg);
+          &:before {
+            height: 1px;
+            width: 420%;
+            content: '';
+            position: absolute;
+            transform: translateX(-100%) rotate(-20deg);
             left: 10px;
             top: 85px;
-            z-index:0;
-            border-bottom:1px solid #000;
+            z-index: 0;
+            border-bottom: 1px solid #000;
 
-            @include media-breakpoint-down(xl) {
-              width:17vw;
+            @media (max-width: 1199.98px) {
+              width: 17vw;
               transform: translateX(-100%) rotate(-27deg);
               left: 14px;
             }
 
-            @include media-breakpoint-down(lg) {
-              width:15vw;
-              left:8px;
-              top:65px;
+            @media (max-width: 991.98px) {
+              width: 15vw;
+              left: 8px;
+              top: 65px;
             }
 
-            @include media-breakpoint-down(md) {
-              display:none;
+            @media (max-width: 767.98px) {
+              display: none;
             }
 
           }
         }
       }
 
-      &:nth-child(1){
-        .circle{
-          &:before{
-            display:none;
+      &:nth-child(1) {
+        .circle {
+          &:before {
+            display: none;
           }
         }
       }
 
-      &:last-child{
-        .circle{
-          &:before{
+      &:last-child {
+        .circle {
+          &:before {
             //border-bottom:1px dotted #000;
           }
         }
       }
 
-      &:before{
-        @include media-breakpoint-down(md) {
-          width:1px;
-          height:100%;
-          background:#000000;
-          position:absolute;
-          content:'';
-          left:30px;
-          top:40px;
+      &:before {
+        @media (max-width: 767.98px) {
+          width: 1px;
+          height: 100%;
+          background: #000000;
+          position: absolute;
+          content: '';
+          left: 30px;
+          top: 40px;
         }
       }
 
-      @include media-breakpoint-down(md) {
-        &:last-child{
-          &:before{
-            display:none;
+      @media (max-width: 767.98px) {
+        &:last-child {
+          &:before {
+            display: none;
           }
 
-          .box{
-            padding-bottom:0;
+          .box {
+            padding-bottom: 0;
           }
         }
       }

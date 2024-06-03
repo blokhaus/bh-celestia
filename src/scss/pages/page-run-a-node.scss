@@ -3,16 +3,19 @@
 	z-index: 1;
 	background: url(../images/BG/technology.png) no-repeat scroll top 500px right transparent;
 
-	@include media-breakpoint-down(xl) {
+	@media (max-width: 1199.98px) {
 		background-position: top 320px right;
 	}
-	@include media-breakpoint-down(lg) {
+
+	@media (max-width: 991.98px) {
 		background-position: top 350px right;
 	}
-	@include media-breakpoint-down(md) {
+
+	@media (max-width: 767.98px) {
 		background-position: top 450px right;
 	}
-	@include media-breakpoint-down(sm) {
+
+	@media (max-width: 575.98px) {
 		background-position: -210px 450px;
 	}
 
@@ -20,37 +23,44 @@
 		z-index: 0;
 		// background: url(../images/BG/home.png) no-repeat scroll top 1800px left transparent;
 
-		@include media-breakpoint-down(xl) {
+		@media (max-width: 1199.98px) {
 			background-position: top 2000px left;
 		}
-		@include media-breakpoint-down(lg) {
+
+		@media (max-width: 991.98px) {
 			background-position: top 2000px left;
 		}
-		@include media-breakpoint-down(md) {
+
+		@media (max-width: 767.98px) {
 			background-position: top 3400px left;
 		}
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			background-position: top 3300px left;
 		}
 	}
 
 	h1.main {
 		max-width: 650px;
-		@include media-breakpoint-down(xl) {
+
+		@media (max-width: 1199.98px) {
 			max-width: 400px;
 		}
 	}
 
 	main {
 		padding-top: 50px;
-		@include media-breakpoint-down(xl) {
+
+		@media (max-width: 1199.98px) {
 			padding-top: 20px;
 		}
 	}
+
 	section {
 		padding-top: 50px;
 		padding-bottom: 50px;
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			padding-top: 40px;
 			padding-bottom: 40px;
 		}
@@ -58,6 +68,7 @@
 
 	.hero .container {
 		position: relative;
+
 		&:before {
 			background: url(../images/run-a-node/run-a-light-node-bg.png) no-repeat scroll top right transparent;
 			background-size: contain;
@@ -70,34 +81,38 @@
 			z-index: -1;
 			max-width: 1100px;
 
-			@include media-breakpoint-up(xxxl) {
+			@media (max-width: 1600px) {
 				width: 200%;
 				height: 200%;
 				top: -276px;
 				right: -60px;
 			}
-			@include media-breakpoint-down(xl) {
+
+			@media (max-width: 1199.98px) {
 				width: 170%;
 				height: 170%;
 				top: -196px;
 				right: -40px;
 				left: unset;
 			}
-			@include media-breakpoint-down(lg) {
+
+			@media (max-width: 991.98px) {
 				width: 170%;
 				height: 170%;
 				top: -197px;
 				max-width: 600px;
 				right: -30px;
 			}
-			@include media-breakpoint-down(md) {
+
+			@media (max-width: 767.98px) {
 				width: 190%;
 				height: 190%;
 				top: -314px;
 				max-width: 80vw;
 				right: -20px;
 			}
-			@include media-breakpoint-down(sm) {
+
+			@media (max-width: 575.98px) {
 				top: -313px;
 				width: 180%;
 				height: 180%;
@@ -120,13 +135,15 @@
 	}
 
 	.hero {
-		@include media-breakpoint-down(md) {
+		@media (max-width: 767.98px) {
 			padding-top: 210px;
 			padding-bottom: 70px;
 		}
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			padding-top: 213px;
 		}
+
 		.text {
 			font-family: $ruberoid;
 			font-weight: 500;
@@ -138,7 +155,7 @@
 			margin-bottom: 50px;
 			text-wrap: balance;
 
-			@include media-breakpoint-down(md) {
+			@media (max-width: 767.98px) {
 				font-size: 14px;
 				line-height: 21px;
 				width: 100%;
@@ -148,19 +165,20 @@
 	}
 
 	.join-the-network {
-		@include media-breakpoint-down(md) {
+		@media (max-width: 767.98px) {
 			padding-top: 70px;
 		}
 	}
 
 	.join-the-network,
 	.light-nodes {
-		@include media-breakpoint-up(md) {
+		@media (min-width: 768px) {
 			h2 {
 				text-align: center;
 				width: fit-content;
 			}
 		}
+
 		.icon-card {
 			border-radius: 8px;
 			border: 1px solid rgba(120, 120, 120, 0.15);
@@ -176,6 +194,7 @@
 
 				.gatsby-image-wrapper {
 					overflow: visible;
+
 					&:before {
 						content: "";
 						position: absolute;
@@ -199,6 +218,7 @@
 
 			.link-wrapper {
 				margin-top: auto;
+
 				.button {
 					margin-top: 0px;
 					margin-bottom: 0px;
@@ -209,9 +229,10 @@
 	}
 
 	.light-nodes {
-		@include media-breakpoint-up(md) {
+		@media (min-width: 768px) {
 			padding-bottom: 150px;
 		}
+
 		h2 {
 			text-align: left;
 		}
@@ -222,7 +243,8 @@
 	.button-icon,
 	.button-external {
 		margin-right: 20px;
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			margin-bottom: 20px;
 		}
 	}
@@ -230,6 +252,7 @@
 	.min-width-50 {
 		min-width: 50%;
 	}
+
 	.min-width-33 {
 		min-width: 33%;
 	}
@@ -237,16 +260,19 @@
 	.what-is-a-node {
 		padding-top: 50px;
 		padding-bottom: 0px;
-		@include media-breakpoint-down(md) {
+
+		@media (max-width: 767.98px) {
 			padding-top: 50px;
 		}
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			padding-top: 0px;
 		}
 
 		.image-box--node {
 			padding: 60px 0px 0px 8px;
-			@include media-breakpoint-down(md) {
+
+			@media (max-width: 767.98px) {
 				padding: 0px 0px 0px 8px;
 				margin-left: auto;
 				margin-right: auto;

@@ -1,135 +1,136 @@
-.podcast-section{
-  width:100%;
+.podcast-section {
+  width: 100%;
 
-  .podcast{
-    height:100%;
+  .podcast {
+    height: 100%;
   }
 
-  .section-inner{
-    position:relative;
-    width:100%;
+  .section-inner {
+    position: relative;
+    width: 100%;
 
-    padding:0 100px;
-    overflow:visible;
+    padding: 0 100px;
+    overflow: visible;
 
-    @include media-breakpoint-down(md) {
-      padding:0 50px;
+    @media (max-width: 767.98px) {
+      padding: 0 50px;
     }
   }
 
-  .multi-carousel{
+  .multi-carousel {
     overflow: visible;
   }
 
-  .react-multi-carousel-item{
-    opacity:0;
-    transition:600ms all cubic-bezier(0.83, 0, 0.17, 1);
-  }
-  .react-multi-carousel-item--active{
-    opacity:1;
+  .react-multi-carousel-item {
+    opacity: 0;
+    transition: 600ms all cubic-bezier(0.83, 0, 0.17, 1);
   }
 
-  .podcast{
-    margin:0 15px;
+  .react-multi-carousel-item--active {
+    opacity: 1;
+  }
 
-    @include media-breakpoint-down(sm) {
-      margin:0;
-      padding:30px;
+  .podcast {
+    margin: 0 15px;
+
+    @media (max-width: 575.98px) {
+      margin: 0;
+      padding: 30px;
     }
 
-    .title{
+    .title {
       font-family: $ruberoid;
-      font-weight:bold;
+      font-weight: bold;
       font-size: 20px;
       color: #000000;
       letter-spacing: 0;
       line-height: 26px;
     }
 
-    .subtitle{
+    .subtitle {
       font-family: $ruberoid;
-      font-weight:300;
+      font-weight: 300;
       font-size: 14px;
       color: #000000;
       letter-spacing: 0;
       line-height: 22px;
-      margin-top:10px;
+      margin-top: 10px;
 
-      strong{
-        font-weight:600;
+      strong {
+        font-weight: 600;
       }
     }
 
-    .podcast-bottom{
-      width:100%;
-      margin-top:40px;
+    .podcast-bottom {
+      width: 100%;
+      margin-top: 40px;
 
-      @include media-breakpoint-down(sm) {
-        margin-top:20px;
+      @media (max-width: 575.98px) {
+        margin-top: 20px;
       }
 
-      .play-button{
+      .play-button {
         font-family: $ruberoid;
-        font-weight:bold;
+        font-weight: bold;
         font-size: 18px;
         color: #000000;
         letter-spacing: 0;
-        line-height:30px;
-        display:inline-block;
-        height:30px;
-        text-decoration:none;
+        line-height: 30px;
+        display: inline-block;
+        height: 30px;
+        text-decoration: none;
 
-        i{
-          float:left;
-          margin-right:10px;
-          font-size:30px;
-          color:$purple;
-          transition:600ms all cubic-bezier(0.83, 0, 0.17, 1);
-          transform:scale(1);
+        i {
+          float: left;
+          margin-right: 10px;
+          font-size: 30px;
+          color: $purple;
+          transition: 600ms all cubic-bezier(0.83, 0, 0.17, 1);
+          transform: scale(1);
         }
 
-        @include media-breakpoint-down(sm) {
-          font-size:16px;
-          height:24px;
-          line-height:24px;
+        @media (max-width: 575.98px) {
+          font-size: 16px;
+          height: 24px;
+          line-height: 24px;
 
-          i{
-            font-size:24px;
+          i {
+            font-size: 24px;
           }
         }
       }
 
-      .read{
+      .read {
         border-left: 1px solid #EBEBEB;
-        padding-left:20px;
+        padding-left: 20px;
         font-family: $ruberoid;
-        font-weight:600;
+        font-weight: 600;
         font-size: 13px;
         color: #000000;
         letter-spacing: 0;
-        line-height:32px;
+        line-height: 32px;
 
-        a{
-          color:$purple;
-          text-decoration:underline;
+        a {
+          color: $purple;
+          text-decoration: underline;
           position: relative;
-          padding-right:20px;
+          padding-right: 20px;
 
-          &:after{
+          &:after {
             content: "\e918";
-            font-family:'celestia';
-            color:$purple;
-            position:absolute;
-            right:0;
-            font-size:10px;
-            transform:translateX(0px) rotate(0deg);
-            transition:600ms all cubic-bezier(0.83, 0, 0.17, 1);
+            font-family: 'celestia';
+            color: $purple;
+            position: absolute;
+            right: 0;
+            font-size: 10px;
+            transform: translateX(0px) rotate(0deg);
+            transition: 600ms all cubic-bezier(0.83, 0, 0.17, 1);
 
           }
 
-          &:hover{
-            &:after{
-              transform:translateX(2px) rotate(45deg);
+          &:hover {
+            &:after {
+              transform: translateX(2px) rotate(45deg);
             }
           }
         }
@@ -158,52 +159,52 @@
     }
   }*/
 
-  .carousel-button-group{
-    position:absolute;
-    top:50%;
-    width:100%;
+  .carousel-button-group {
+    position: absolute;
+    top: 50%;
+    width: 100%;
 
-    .button{
-      position:absolute;
-      border:none;
-      background: rgba(255,255,255,.4);
+    .button {
+      position: absolute;
+      border: none;
+      background: rgba(255, 255, 255, .4);
       border-radius: 6px;
-      color:#000;
-      font-size:28px;
+      color: #000;
+      font-size: 28px;
       transition: 300ms all ease-in-out;
-      width:35px;
-      height:60px;
-      line-height:64px;
+      width: 35px;
+      height: 60px;
+      line-height: 64px;
 
-      &.disable{
-        visibility:hidden;
+      &.disable {
+        visibility: hidden;
       }
 
-      @include media-breakpoint-down(md) {
-        font-size:24px;
+      @media (max-width: 767.98px) {
+        font-size: 24px;
       }
 
-      &:hover{
-        background: rgba(255,255,255,.7);
+      &:hover {
+        background: rgba(255, 255, 255, .7);
       }
 
-      &.button-left{
-        left:-100px;
-        top:50%;
-        transform:translateY(-50%);
+      &.button-left {
+        left: -100px;
+        top: 50%;
+        transform: translateY(-50%);
 
-        @include media-breakpoint-down(md) {
-          left:-50px;
+        @media (max-width: 767.98px) {
+          left: -50px;
         }
       }
 
-      &.button-right{
-        right:100px;
-        top:50%;
-        transform:translateY(-50%);
+      &.button-right {
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
 
-        @include media-breakpoint-down(md) {
-          right:50px;
+        @media (max-width: 767.98px) {
+          right: 50px;
         }
       }
     }

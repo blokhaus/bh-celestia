@@ -3,7 +3,8 @@
 	z-index: 1;
 	min-height: 70vw;
 	overflow-x: hidden;
-	@include media-breakpoint-down(md) {
+
+	@media (max-width: 767.98px) {
 		min-height: 520px;
 	}
 
@@ -23,7 +24,8 @@
 		top: 0;
 		left: 0;
 		z-index: -1;
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			background-size: 200%;
 		}
 	}
@@ -34,26 +36,27 @@
 	margin: auto;
 	max-width: 1140px;
 
-	&.new-blog{
-		padding:0 100px 200px 100px;
-		font-size:1.25rem;
+	&.new-blog {
+		padding: 0 100px 200px 100px;
+		font-size: 1.25rem;
 
-		@include media-breakpoint-down(lg) {
+		@media (max-width: 991.98px) {
 			padding: 0 20px 100px 20px;
-			font-size:1em;
+			font-size: 1em;
 		}
 
-		@include media-breakpoint-down(sm) {
+		@media (max-width: 575.98px) {
 			padding: 0 0 100px 0;
 		}
 
-		.h4, h4{
-			margin-top:50px;
+		.h4,
+		h4 {
+			margin-top: 50px;
 		}
 
-		ul{
-			li{
-				margin-bottom:10px;
+		ul {
+			li {
+				margin-bottom: 10px;
 			}
 		}
 	}
@@ -155,9 +158,11 @@
 	ol,
 	ul {
 		margin-bottom: 40px;
+
 		li {
 			padding-left: 20px;
 			margin-bottom: 20px;
+
 			&::marker {
 				font-weight: bold;
 			}
@@ -190,7 +195,7 @@
 	}
 
 	.blog-post-content {
-		@include media-breakpoint-down(md) {
+		@media (max-width: 767.98px) {
 			padding-left: 0;
 		}
 
@@ -204,7 +209,7 @@
 		margin: 70px 0 0px;
 		position: relative;
 
-		@include media-breakpoint-down(sm) {
+		@media (max-width: 575.98px) {
 			padding: 30px 0;
 			margin: 30px 0 20px;
 		}
@@ -230,7 +235,7 @@
 	margin-bottom: 30px;
 
 	.category-menu {
-		@include media-breakpoint-down(lg) {
+		@media (max-width: 991.98px) {
 			max-height: 0;
 			overflow: hidden;
 			transition: 500ms all ease-in-out;
@@ -257,7 +262,7 @@
 		padding: 25px;
 		margin-bottom: 10px;
 
-		@include media-breakpoint-down(lg) {
+		@media (max-width: 991.98px) {
 			display: block;
 		}
 
@@ -285,7 +290,7 @@
 		max-height: calc(100vh - 180px);
 		overflow: auto;
 
-		@include media-breakpoint-down(lg) {
+		@media (max-width: 991.98px) {
 			padding: 0 20px;
 		}
 
@@ -354,6 +359,7 @@
 
 		.group-items {
 			transition: 300ms all ease-in-out;
+
 			.article-title {
 				font-family: $ruberoid;
 				font-weight: 500;
@@ -407,6 +413,7 @@
 
 	div.selected {
 		position: relative;
+
 		a:not(.suggest-button):not(.article-link) {
 			font-weight: bold;
 			color: $purple;
@@ -432,7 +439,7 @@
 		padding: 0 100px;
 		overflow: visible;
 
-		@include media-breakpoint-down(md) {
+		@media (max-width: 767.98px) {
 			padding: 0 50px;
 		}
 
@@ -440,6 +447,7 @@
 			padding: 0 15px;
 		}
 	}
+
 	.carousel-button-group {
 		position: absolute;
 		top: 50%;
@@ -461,7 +469,7 @@
 				visibility: hidden;
 			}
 
-			@include media-breakpoint-down(md) {
+			@media (max-width: 767.98px) {
 				font-size: 24px;
 			}
 
@@ -474,7 +482,7 @@
 				top: 50%;
 				transform: translateY(-50%);
 
-				@include media-breakpoint-down(md) {
+				@media (max-width: 767.98px) {
 					left: -50px;
 				}
 			}
@@ -484,7 +492,7 @@
 				top: 50%;
 				transform: translateY(-50%);
 
-				@include media-breakpoint-down(md) {
+				@media (max-width: 767.98px) {
 					right: 50px;
 				}
 			}
@@ -506,10 +514,11 @@
 			&:nth-child(1) {
 				border-right: 1px solid #e7e4e4;
 
-				@include media-breakpoint-down(md) {
+				@media (max-width: 767.98px) {
 					border-right: none;
 				}
 			}
+
 			&:nth-child(3) {
 				display: none;
 			}
@@ -519,7 +528,7 @@
 				box-shadow: none;
 				padding: 40px 50px;
 
-				@include media-breakpoint-down(md) {
+				@media (max-width: 767.98px) {
 					padding: 30px 0;
 				}
 
@@ -561,6 +570,7 @@
 			}
 		}
 	}
+
 	.closed {
 		.group-items {
 			max-height: 0;

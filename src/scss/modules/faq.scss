@@ -1,108 +1,114 @@
-.faq{
-  width:100%;
+.faq {
+  width: 100%;
   border-bottom: 1px solid #000000;
-  
 
-  .question{
+
+  .question {
     font-family: $ruberoid;
-    font-weight:500;
+    font-weight: 500;
     font-size: 21px;
     color: #000000;
-    padding:25px 50px 25px 20px;
-    cursor:pointer;
+    padding: 25px 50px 25px 20px;
+    cursor: pointer;
 
-    @include media-breakpoint-down(sm) {
-			padding:25px 0px 25px 0px;
-		}
+    @media (max-width: 575.98px) {
+      padding: 25px 0px 25px 0px;
+    }
   }
 
-  .text{
+  .text {
     font-family: $inter;
-    font-weight:300;
+    font-weight: 300;
     font-size: 18px;
     color: #000000;
     letter-spacing: 0;
     line-height: 27px;
-    padding:0 20px 0 20px;
-    transition:600ms all cubic-bezier(0.83, 0, 0.17, 1);
-    max-height:0px;
+    padding: 0 20px 0 20px;
+    transition: 600ms all cubic-bezier(0.83, 0, 0.17, 1);
+    max-height: 0px;
     overflow: hidden;
-    @include media-breakpoint-down(sm) {
-        padding:0px 0px 0px 0px;
-      }
 
-    a{
-      color:$purple;
+    @media (max-width: 575.98px) {
+      padding: 0px 0px 0px 0px;
+    }
+
+    a {
+      color: $purple;
     }
   }
 
-  .dropdown{
-    width:38px;
-    height:38px;
+  .dropdown {
+    width: 38px;
+    height: 38px;
     background: #000000;
     border-radius: 50%;
-    line-height:38px;
-    position:relative;
-    margin-top:20px;
-    transition:600ms all cubic-bezier(0.83, 0, 0.17, 1);
-    overflow:hidden;
+    line-height: 38px;
+    position: relative;
+    margin-top: 20px;
+    transition: 600ms all cubic-bezier(0.83, 0, 0.17, 1);
+    overflow: hidden;
 
-    &:after{
+    &:after {
       content: "\e906";
-      font-family:'celestia';
-      color:white;
-      text-align:center;
-      line-height:2.6em;
-      font-size:1em;
-      position:absolute;
-      transition:600ms all cubic-bezier(0.83, 0, 0.17, 1);
-      left:0;
-      height:38px;
-      width:38px;
-      top:0;
+      font-family: 'celestia';
+      color: white;
+      text-align: center;
+      line-height: 2.6em;
+      font-size: 1em;
+      position: absolute;
+      transition: 600ms all cubic-bezier(0.83, 0, 0.17, 1);
+      left: 0;
+      height: 38px;
+      width: 38px;
+      top: 0;
     }
-    &:before{
+
+    &:before {
       content: "\e906";
-      font-family:'celestia';
-      color:white;
-      text-align:center;
-      line-height:2.6em;
-      font-size:1em;
-      position:absolute;
-      transition:600ms all cubic-bezier(0.83, 0, 0.17, 1);
-      left:0;
-      height:38px;
-      width:38px;
-      top:100%;
-      transform:rotate(180deg);
+      font-family: 'celestia';
+      color: white;
+      text-align: center;
+      line-height: 2.6em;
+      font-size: 1em;
+      position: absolute;
+      transition: 600ms all cubic-bezier(0.83, 0, 0.17, 1);
+      left: 0;
+      height: 38px;
+      width: 38px;
+      top: 100%;
+      transform: rotate(180deg);
     }
   }
 
-  &:hover{
-    .dropdown{
-      background:$purple;
+  &:hover {
+    .dropdown {
+      background: $purple;
     }
   }
 
-  &.opened{
-    .question{
-      font-weight:bold;
+  &.opened {
+    .question {
+      font-weight: bold;
     }
-    .text{
-      padding:0px 20px 20px 20px;
-      max-height:2500px;
-      @include media-breakpoint-down(sm) {
-        padding:0px 20px 20px 0px;
+
+    .text {
+      padding: 0px 20px 20px 20px;
+      max-height: 2500px;
+
+      @media (max-width: 575.98px) {
+        padding: 0px 20px 20px 0px;
       }
     }
 
-    .dropdown{
-      background:$purple;
-      &:after{
-        top:100%;
+    .dropdown {
+      background: $purple;
+
+      &:after {
+        top: 100%;
       }
-      &:before{
-        top:0;
+
+      &:before {
+        top: 0;
       }
     }
   }

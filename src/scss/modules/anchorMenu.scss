@@ -1,15 +1,15 @@
-.anchorMenu{
-  .anchor-link{
+.anchorMenu {
+  .anchor-link {
     font-family: $ruberoid;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 14px;
     color: #000000;
     letter-spacing: 0.18px;
     line-height: 32px;
-    text-transform:uppercase;
+    text-transform: uppercase;
   }
 
-  @include media-breakpoint-down(md) {
+  @media (max-width: 767.98px) {
     margin-top: 32px;
     margin-bottom: 20px;
   }

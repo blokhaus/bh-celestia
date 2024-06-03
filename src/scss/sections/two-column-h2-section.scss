@@ -1,7 +1,7 @@
 .two-column-h2 {
 	padding: 50px 0;
 
-	@include media-breakpoint-down(sm) {
+	@media (max-width: 575.98px) {
 		padding: 25px 0;
 	}
 
@@ -12,11 +12,11 @@
 		font-weight: 400;
 		line-height: 1.5em;
 
-		@include media-breakpoint-down(lg) {
+		@media (max-width: 991.98px) {
 			font-size: 20px;
 		}
 
-		@include media-breakpoint-down(sm) {
+		@media (max-width: 575.98px) {
 			font-size: 16px;
 		}
 
@@ -30,7 +30,8 @@
 			font-style: normal;
 			font-weight: 400;
 			line-height: 28px;
-			@include media-breakpoint-down(sm) {
+
+			@media (max-width: 575.98px) {
 				font-size: 16px;
 				line-height: 26px;
 			}
@@ -46,19 +47,23 @@
 		margin: auto;
 		display: block;
 	}
-	@include media-breakpoint-up(sm) {
+
+	@media (min-width: 576px) {
 		&.ltr {
 			.col.col-12.col-lg-6.order-lg-1 {
 				padding-right: 60px;
 			}
+
 			.col.col-12.col-lg-6.order-lg-2 {
 				padding-left: 60px;
 			}
 		}
+
 		&.rtl {
 			.col.col-12.col-lg-6.order-lg-1 {
 				padding-right: 60px;
 			}
+
 			.col.col-12.col-lg-6.order-lg-2 {
 				padding-left: 60px;
 			}
@@ -80,12 +85,13 @@
 			}
 		}
 
-		@include media-breakpoint-down(sm) {
+		@media (max-width: 575.98px) {
 			transform: scale(1.5);
 			transform-origin: center !important;
 			margin-bottom: 30px;
 		}
 	}
+
 	.lottie-anim-2 {
 		width: 680px;
 		height: 450px;
@@ -99,7 +105,7 @@
 			}
 		}
 
-		@include media-breakpoint-down(sm) {
+		@media (max-width: 575.98px) {
 			transform: scale(1.5);
 			transform-origin: center !important;
 			margin-bottom: 30px;

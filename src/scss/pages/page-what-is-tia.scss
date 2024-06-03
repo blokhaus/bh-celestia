@@ -3,16 +3,19 @@
 	z-index: 1;
 	background: url(../images/BG/technology.png) no-repeat scroll top 500px right transparent;
 
-	@include media-breakpoint-down(xl) {
+	@media (max-width: 1199.98px) {
 		background-position: top 320px right;
 	}
-	@include media-breakpoint-down(lg) {
+
+	@media (max-width: 991.98px) {
 		background-position: top 350px right;
 	}
-	@include media-breakpoint-down(md) {
+
+	@media (max-width: 767.98px) {
 		background-position: top 450px right;
 	}
-	@include media-breakpoint-down(sm) {
+
+	@media (max-width: 575.98px) {
 		background-position: -210px 450px;
 	}
 
@@ -20,34 +23,41 @@
 		z-index: 0;
 		// background: url(../images/BG/home.png) no-repeat scroll top 1800px left transparent;
 
-		@include media-breakpoint-down(xl) {
+		@media (max-width: 1199.98px) {
 			background-position: top 2000px left;
 		}
-		@include media-breakpoint-down(lg) {
+
+		@media (max-width: 991.98px) {
 			background-position: top 2000px left;
 		}
-		@include media-breakpoint-down(md) {
+
+		@media (max-width: 767.98px) {
 			background-position: top 3400px left;
 		}
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			background-position: top 3300px left;
 		}
 	}
 
 	h1.main {
 		max-width: 650px;
-		@include media-breakpoint-down(xl) {
+
+		@media (max-width: 1199.98px) {
 			max-width: 400px;
 		}
-		@include media-breakpoint-down(md) {
+
+		@media (max-width: 767.98px) {
 			max-width: 400px;
 		}
 	}
+
 	.main-text {
-		@include media-breakpoint-down(xl) {
+		@media (max-width: 1199.98px) {
 			max-width: 400px;
 		}
-		@include media-breakpoint-down(md) {
+
+		@media (max-width: 767.98px) {
 			max-width: 400px;
 		}
 	}
@@ -64,20 +74,22 @@
 		height: 600px;
 		z-index: -1;
 
-		@include media-breakpoint-down(xl) {
+		@media (max-width: 1199.98px) {
 			width: 540px;
 			height: 540px;
 			top: 30px;
 			right: 60px;
 			left: 50%;
 		}
-		@include media-breakpoint-down(lg) {
+
+		@media (max-width: 991.98px) {
 			width: 380px;
 			height: 380px;
 			top: 70px;
 			right: 50px;
 		}
-		@include media-breakpoint-down(md) {
+
+		@media (max-width: 767.98px) {
 			width: 88%;
 			height: 88%;
 			max-width: 480px;
@@ -91,10 +103,12 @@
 	main {
 		padding-top: 100px;
 	}
+
 	section {
 		padding-top: 50px;
 		padding-bottom: 50px;
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			padding-top: 40px;
 			padding-bottom: 40px;
 		}
@@ -109,7 +123,8 @@
 		line-height: 25px;
 		margin-bottom: 30px;
 		max-width: 560px;
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			max-width: 100%;
 		}
 	}
@@ -123,17 +138,20 @@
 		line-height: 24px;
 		margin-top: 22px;
 		max-width: 450px;
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			max-width: 100%;
 		}
 	}
 
 	.hero {
 		padding-bottom: 0px;
-		@include media-breakpoint-down(md) {
+
+		@media (max-width: 767.98px) {
 			padding-top: 375px;
 		}
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			padding-top: 65vw;
 		}
 	}
@@ -143,7 +161,8 @@
 	.button-icon,
 	.button-external {
 		margin-right: 20px;
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			margin-bottom: 20px;
 		}
 	}
@@ -151,6 +170,7 @@
 	.min-width-50 {
 		min-width: 50%;
 	}
+
 	.min-width-33 {
 		min-width: 33%;
 	}
@@ -158,26 +178,32 @@
 	.tia-role {
 		padding-top: 80px;
 		padding-bottom: 0px;
-		@include media-breakpoint-up(lg) {
+
+		@media (min-width: 992px) {
 			padding-top: 145px;
 			padding-bottom: 0px;
 		}
+
 		.role-items {
 			margin-top: 32px;
 			display: flex;
 			justify-content: space-between;
 			flex-direction: column;
-			@include media-breakpoint-up(lg) {
+
+			@media (min-width: 992px) {
 				margin-top: 56px;
 				flex-direction: row;
 			}
 		}
+
 		.role-card {
 			height: 100%;
 			padding-bottom: 30px;
-			@include media-breakpoint-up(lg) {
+
+			@media (min-width: 992px) {
 				padding-bottom: 40px;
 			}
+
 			.role-image-wrapper {
 				display: flex;
 				flex-direction: column;
@@ -185,13 +211,16 @@
 				height: 100%;
 				width: 140px;
 				margin-bottom: 10px;
-				@include media-breakpoint-down(sm) {
+
+				@media (max-width: 575.98px) {
 					width: 100px;
 				}
-				@include media-breakpoint-up(lg) {
+
+				@media (min-width: 992px) {
 					margin-bottom: 20px;
 				}
 			}
+
 			.role-card-title {
 				color: #000;
 				font-family: $ruberoid;
@@ -201,6 +230,7 @@
 				line-height: 28px;
 				max-width: 320px;
 			}
+
 			.role-card-text {
 				color: #414141;
 				font-family: $inter;
@@ -210,7 +240,8 @@
 				line-height: 21px;
 				letter-spacing: -0.1px;
 				max-width: 460px;
-				@include media-breakpoint-up(lg) {
+
+				@media (min-width: 992px) {
 					max-width: 320px;
 				}
 			}
@@ -220,36 +251,41 @@
 	.custody-stacking {
 		padding-top: 20px;
 		padding-bottom: 0;
-		// @include media-breakpoint-up(lg) {
+		// @media (min-width: 992px) {
 		// 	padding-top: 50px;
 		// 	padding-bottom: 100px;
 		// }
 
 		.custody-stacking-title {
 			margin-bottom: 35px;
-			@include media-breakpoint-up(lg) {
+
+			@media (min-width: 992px) {
 				padding-top: 30px;
 			}
 		}
 
 		.custody-stacking-item {
 			margin-bottom: 0px;
-			@include media-breakpoint-down(lg) {
+
+			@media (max-width: 991.98px) {
 				&:not(:last-of-type) {
 					margin-bottom: 90px;
 				}
 			}
-			@include media-breakpoint-down(sm) {
+
+			@media (max-width: 575.98px) {
 				&:not(:last-of-type) {
 					margin-bottom: 60px;
 				}
 			}
 		}
+
 		.image-box--node {
 			.image-wrapper {
 				display: flex;
 				justify-content: center;
-				@include media-breakpoint-down(lg) {
+
+				@media (max-width: 991.98px) {
 					margin-left: auto;
 					margin-right: auto;
 					padding: 0px;
@@ -260,6 +296,7 @@
 
 		.text-box {
 			max-width: 600px;
+
 			.title {
 				font-size: 36px;
 				font-style: normal;
@@ -267,17 +304,21 @@
 				line-height: 1.3em;
 				max-width: auto;
 				margin-bottom: 20px;
-				@include media-breakpoint-down(md) {
+
+				@media (max-width: 767.98px) {
 					font-size: 24px;
 					max-width: 380px;
 				}
 			}
+
 			&:last-of-type {
 				margin-top: 0px;
-				@include media-breakpoint-up(lg) {
+
+				@media (min-width: 992px) {
 					margin-top: 30px;
 				}
 			}
+
 			.custody-text-box {
 				color: #414141;
 				font-family: $inter;
@@ -285,23 +326,28 @@
 				line-height: 24px;
 				font-style: normal;
 				font-weight: 300;
-				@include media-breakpoint-up(lg) {
+
+				@media (min-width: 992px) {
 					font-size: 20px;
 					line-height: 30px;
 				}
+
 				a {
 					box-shadow: inset 0 -2px 0 0 #414141;
 				}
+
 				.link-list {
 					display: flex;
 					flex-wrap: wrap;
 					margin-top: 10px;
+
 					.link-wrapper {
 						flex-basis: auto;
 						min-width: 180px;
 						margin-top: 10px;
+
 						a {
-							box-shadow:none	;
+							box-shadow: none;
 						}
 
 						.link {
@@ -315,13 +361,16 @@
 							color: #000000;
 							transition: all 0.2s ease-in-out;
 							box-shadow: none;
+
 							&:hover {
 								color: #393939;
+
 								& svg {
 									margin-left: 16px;
 								}
 							}
 						}
+
 						svg {
 							margin-left: 8px;
 							transition: all 0.2s ease-in-out;
@@ -337,28 +386,35 @@
 	.wallets {
 		padding-top: 0px;
 		padding-bottom: 100px;
-		@include media-breakpoint-up(lg) {
+
+		@media (min-width: 992px) {
 			padding-bottom: 140px;
 		}
+
 		.wallets-title {
 			margin-bottom: 10px;
-			@include media-breakpoint-up(lg) {
+
+			@media (min-width: 992px) {
 				margin-bottom: 20px;
 			}
 		}
+
 		.wallets-items {
 			margin-top: 56px;
 		}
+
 		.wallet-card-wrapper {
 			position: relative;
 			z-index: 0;
 			padding-bottom: 20px;
 			padding-right: 20px;
-			@include media-breakpoint-down(lg) {
+
+			@media (max-width: 991.98px) {
 				flex-basis: 100%;
 				padding-right: 0px;
 			}
-			@include media-breakpoint-up(lg) {
+
+			@media (min-width: 992px) {
 				flex-basis: 50%;
 				padding-right: 20px;
 			}
@@ -371,20 +427,25 @@
 				border-radius: 8px;
 				background: rgba(247, 247, 247, 0.6);
 				backdrop-filter: blur(32px);
-				@include media-breakpoint-down(md) {
+
+				@media (max-width: 767.98px) {
 					padding: 20px;
 				}
-				@include media-breakpoint-down(sm) {
+
+				@media (max-width: 575.98px) {
 					padding: 16px;
 				}
+
 				.wallet-container {
 					display: flex;
 					align-items: center;
 					flex-direction: row;
-					@include media-breakpoint-down(sm) {
+
+					@media (max-width: 575.98px) {
 						align-items: start;
 					}
 				}
+
 				.wallet-image-wrapper {
 					display: flex;
 					flex-direction: column;
@@ -393,7 +454,8 @@
 					width: 63px;
 					margin-right: 20px;
 					z-index: 0;
-					@include media-breakpoint-down(md) {
+
+					@media (max-width: 767.98px) {
 						margin-top: 5px;
 						height: 40px;
 						width: 40px;
@@ -403,6 +465,7 @@
 						border-radius: 9999px;
 					}
 				}
+
 				.wallet-card-title {
 					color: #000;
 					font-family: $ruberoid;
@@ -412,10 +475,12 @@
 					line-height: normal;
 					max-width: 320px;
 					margin-bottom: 2px;
-					@include media-breakpoint-down(sm) {
+
+					@media (max-width: 575.98px) {
 						font-size: 20px;
 					}
 				}
+
 				.wallet-card-text {
 					color: #393939;
 					font-family: $inter;
@@ -429,6 +494,7 @@
 
 				.link-wrapper {
 					margin-top: 20px;
+
 					.link {
 						font-family: $ruberoid;
 						font-style: normal;
@@ -440,13 +506,16 @@
 						color: #000000;
 						transition: all 0.2s ease-in-out;
 						box-shadow: none;
+
 						&:hover {
 							color: #393939;
+
 							& svg {
 								margin-left: 16px;
 							}
 						}
 					}
+
 					svg {
 						margin-left: 8px;
 						transition: all 0.2s ease-in-out;
@@ -454,12 +523,14 @@
 						margin-bottom: 2px;
 					}
 				}
+
 				.wallet-device-item {
 					&:not(:last-of-type) {
 						margin-right: 20px;
 					}
 				}
 			}
+
 			.wallet-blurred-image {
 				position: absolute;
 				top: 0;
@@ -467,15 +538,18 @@
 				height: 134px;
 				width: 134px;
 				z-index: -1;
-				@include media-breakpoint-down(md) {
+
+				@media (max-width: 767.98px) {
 					height: 100px;
 					width: 100px;
 				}
+
 				.gatsby-image-wrapper {
 					border-radius: 9999px;
 				}
 			}
 		}
+
 		.two-col-flex {
 			display: flex;
 			flex-wrap: wrap;
@@ -485,12 +559,15 @@
 	.managing-tia {
 		padding-top: 100px;
 		padding-bottom: 100px;
-		@include media-breakpoint-down(md) {
+
+		@media (max-width: 767.98px) {
 			padding-top: 60px;
 		}
-		@include media-breakpoint-down(sm) {
+
+		@media (max-width: 575.98px) {
 			padding-top: 60px;
 		}
+
 		.title {
 			color: #000;
 			font-family: $ruberoid;
@@ -500,6 +577,7 @@
 			line-height: 48px;
 			margin-bottom: 20px;
 		}
+
 		.text-box {
 			color: #414141;
 			font-family: $inter;
@@ -511,19 +589,23 @@
 			max-width: 570px;
 			margin-bottom: 24px;
 			padding-right: 40px;
-			@include media-breakpoint-up(lg) {
+
+			@media (min-width: 992px) {
 				margin-bottom: 0px;
 			}
 		}
+
 		.link-card {
 			border-radius: 8px;
 			border: 1px solid #e1e1e1;
 			background: #fff;
 			padding: 25px;
-			@include media-breakpoint-down(sm) {
+
+			@media (max-width: 575.98px) {
 				padding: 16px;
 			}
 		}
+
 		.link-title {
 			color: #000;
 			font-family: $ruberoid;
@@ -531,12 +613,15 @@
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
-			@include media-breakpoint-up(lg) {
+
+			@media (min-width: 992px) {
 				font-size: 26px;
 			}
 		}
+
 		.link-wrapper {
 			margin-top: 10px;
+
 			.link {
 				font-family: $ruberoid;
 				font-style: normal;
@@ -548,13 +633,16 @@
 				color: #000000;
 				transition: all 0.2s ease-in-out;
 				box-shadow: none;
+
 				&:hover {
 					color: #393939;
+
 					& svg {
 						margin-left: 16px;
 					}
 				}
 			}
+
 			svg {
 				margin-left: 8px;
 				transition: all 0.2s ease-in-out;

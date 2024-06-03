@@ -2,6 +2,7 @@
 	min-height: 60vw;
 	position: relative;
 	z-index: 1;
+
 	main {
 		h4.main {
 			font-size: 36px;
@@ -18,7 +19,7 @@
 			width: 100%;
 			margin-bottom: 30px;
 
-			@include media-breakpoint-down(md) {
+			@media (max-width: 767.98px) {
 				font-size: 14px;
 				line-height: 21px;
 				width: 100%;
@@ -35,7 +36,8 @@
 			line-height: 24px;
 			letter-spacing: -0.1px;
 			margin-bottom: 50px;
-			@include media-breakpoint-down(md) {
+
+			@media (max-width: 767.98px) {
 				font-size: 14px;
 				line-height: 19px;
 				margin-bottom: 30px;

@@ -1,86 +1,88 @@
-.roadmap-item{
-  position:relative;
+.roadmap-item {
+  position: relative;
 
-  .box{
-    padding:15px 25px;
-    background:transparent;
-    margin:-15px -25px;
-    display:inline-block;
-    border-radius:20px;
+  .box {
+    padding: 15px 25px;
+    background: transparent;
+    margin: -15px -25px;
+    display: inline-block;
+    border-radius: 20px;
     position: relative;
-    z-index:2;
-    min-height:130px;
+    z-index: 2;
+    min-height: 130px;
 
-    @include media-breakpoint-down(md) {
+    @media (max-width: 767.98px) {
       min-height: unset;
       margin: unset;
       padding: unset;
-      padding-left:90px;
-      padding-bottom:80px;
+      padding-left: 90px;
+      padding-bottom: 80px;
     }
   }
 
-  .title{
+  .title {
     font-family: $ruberoid;
-    font-weight:600;
+    font-weight: 600;
     font-size: 22px;
     color: #000000;
     letter-spacing: 0;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 
 
   }
 
-  .text{
+  .text {
     font-family: $ruberoid;
-    font-weight:500;
+    font-weight: 500;
     font-size: 13px;
     color: #414141;
     letter-spacing: -0.08px;
     line-height: 20px;
   }
 
-  .circle{
-    background: radial-gradient(circle at 10% 0%, rgba(254,124,213,1) 33%, rgba(123,43,249,1) 100%);
+  .circle {
+    background: radial-gradient(circle at 10% 0%, rgba(254, 124, 213, 1) 33%, rgba(123, 43, 249, 1) 100%);
     border-radius: 50%;
-    width:60px;
-    height:60px;
-    position:absolute;
-    margin-top:-5px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-top: -5px;
 
 
-    @include media-breakpoint-down(md) {
-      left:0;
-      top:0;
+    @media (max-width: 767.98px) {
+      left: 0;
+      top: 0;
     }
   }
 
-  &.current{
-    .box{
-      background: rgba(195,195,195,0.10);
+  &.current {
+    .box {
+      background: rgba(195, 195, 195, 0.10);
       -webkit-backdrop-filter: blur(20px);
       backdrop-filter: blur(20px);
 
-      @include media-breakpoint-down(md) {
+      @media (max-width: 767.98px) {
         background: unset;
         -webkit-backdrop-filter: unset;
         backdrop-filter: unset;
       }
     }
-    .title{
+
+    .title {
       font-size: 40px;
 
-      @include media-breakpoint-down(lg) {
-        font-size:32px;
+      @media (max-width: 991.98px) {
+        font-size: 32px;
       }
     }
-    .circle{
+
+    .circle {
       background: radial-gradient(circle at 10% 0%, #FFECC8 33%, #E5627B 100%);
     }
   }
 
-  &.inactive{
-    .circle{
+  &.inactive {
+    .circle {
       background: radial-gradient(circle at 10% 0%, #EDEDED 33%, #9A9A9A 100%);
     }
   }

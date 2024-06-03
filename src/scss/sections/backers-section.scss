@@ -1,13 +1,13 @@
-.backers-section{
-  background:url(../images/BG/backers-section-bg.png) no-repeat scroll center top transparent;
-  background-size:100% 1100px;
+.backers-section {
+  background: url(../images/BG/backers-section-bg.png) no-repeat scroll center top transparent;
+  background-size: 100% 1100px;
 
-&.without-backers{
-  background:none;
-}
+  &.without-backers {
+    background: none;
+  }
 
-  h2:not(.black){
-    color:#fff;
+  h2:not(.black) {
+    color: #fff;
     /*&.with-decor{
       &:before{
         background:url(../images/h2-decor-white.svg) no-repeat scroll center left transparent;
@@ -16,76 +16,76 @@
     }*/
   }
 
-  .container{
-    position:relative;
-    z-index:2;
+  .container {
+    position: relative;
+    z-index: 2;
   }
 
-  .subtitle{
-    width:100%;
-    max-width:460px;
+  .subtitle {
+    width: 100%;
+    max-width: 460px;
     font-family: $ruberoid;
-    font-weight:500;
+    font-weight: 500;
     font-size: 18px;
     color: #FFFFFF;
     letter-spacing: 0;
     line-height: 23px;
   }
 
-  .carousel-inner{
-    padding:0 100px;
-    position:relative;
-    width:100%;
-    overflow:visible;
+  .carousel-inner {
+    padding: 0 100px;
+    position: relative;
+    width: 100%;
+    overflow: visible;
 
 
-    @include media-breakpoint-down(md) {
-      padding:0 50px;
+    @media (max-width: 767.98px) {
+      padding: 0 50px;
     }
   }
 
-  .carousel-button-group{
-    position:absolute;
-    top:50%;
-    width:100%;
+  .carousel-button-group {
+    position: absolute;
+    top: 50%;
+    width: 100%;
 
-    .button{
-      position:absolute;
-      border:none;
-      background: rgba(255,255,255,.4);
+    .button {
+      position: absolute;
+      border: none;
+      background: rgba(255, 255, 255, .4);
       border-radius: 6px;
-      color:#000;
-      font-size:28px;
+      color: #000;
+      font-size: 28px;
       transition: 300ms all ease-in-out;
-      width:35px;
-      height:60px;
-      line-height:64px;
+      width: 35px;
+      height: 60px;
+      line-height: 64px;
 
-      @include media-breakpoint-down(md) {
-        font-size:24px;
+      @media (max-width: 767.98px) {
+        font-size: 24px;
       }
 
-     &:hover{
-       background: rgba(255,255,255,.7);
-     }
+      &:hover {
+        background: rgba(255, 255, 255, .7);
+      }
 
-      &.button-left{
-        left:-100px;
-        top:50%;
-        transform:translateY(-50%);
+      &.button-left {
+        left: -100px;
+        top: 50%;
+        transform: translateY(-50%);
 
-        @include media-breakpoint-down(md) {
-          left:-50px;
+        @media (max-width: 767.98px) {
+          left: -50px;
         }
       }
 
-      &.button-right{
-        right:100px;
-        top:50%;
-        transform:translateY(-50%);
+      &.button-right {
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
 
-        @include media-breakpoint-down(md) {
-          right:50px;
+        @media (max-width: 767.98px) {
+          right: 50px;
         }
       }
     }

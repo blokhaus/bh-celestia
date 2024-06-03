@@ -4,7 +4,8 @@
 	border: 1px solid rgba(0, 0, 0, 0.04);
 	padding: 35px 25px;
 	height: 100%;
-	@include media-breakpoint-down(md) {
+
+	@media (max-width: 767.98px) {
 		height: auto;
 	}
 
@@ -30,7 +31,7 @@
 		letter-spacing: 0;
 		line-height: 40px;
 
-		@include media-breakpoint-down(md) {
+		@media (max-width: 767.98px) {
 			font-size: 24px;
 			line-height: 27px;
 		}
@@ -44,7 +45,7 @@
 		color: #414141;
 		letter-spacing: -0.1px;
 
-		@include media-breakpoint-down(md) {
+		@media (max-width: 767.98px) {
 			font-size: 15px;
 			line-height: 23px;
 		}

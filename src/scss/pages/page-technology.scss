@@ -1,60 +1,65 @@
-.technology-page{
+.technology-page {
   position: relative;
-	z-index: 1;
-  background:url(../images/BG/technology.png) no-repeat scroll top 100vw right transparent;
+  z-index: 1;
+  background: url(../images/BG/technology.png) no-repeat scroll top 100vw right transparent;
 
-  @include media-breakpoint-down(xl) {
+  @media (max-width: 1199.98px) {
     background-position: top 110vw right;
   }
-  @include media-breakpoint-down(lg) {
+
+  @media (max-width: 991.98px) {
     background-position: top 1500px right;
   }
-  @include media-breakpoint-down(md) {
+
+  @media (max-width: 767.98px) {
     background-position: top 1700px right;
   }
-  @include media-breakpoint-down(sm) {
+
+  @media (max-width: 575.98px) {
     background-position: top 2500px right;
   }
 
-  h1.main{
-    @include media-breakpoint-down(sm) {
-      margin-bottom:20px;
+  h1.main {
+    @media (max-width: 575.98px) {
+      margin-bottom: 20px;
     }
   }
-  h5.main{
+
+  h5.main {
     font-size: 26px;
     letter-spacing: 0;
     line-height: 34px;
-    max-width:990px;
-    font-weight:500;
+    max-width: 990px;
+    font-weight: 500;
 
-    @include media-breakpoint-down(md) {
+    @media (max-width: 767.98px) {
       font-size: 28px;
       letter-spacing: 0.37px;
       line-height: 32px;
     }
-    @include media-breakpoint-down(sm) {
+
+    @media (max-width: 575.98px) {
       font-size: 20px;
       letter-spacing: 0.26px;
       line-height: 22px;
     }
   }
 
-  h4.main{
-    max-width:880px;
+  h4.main {
+    max-width: 880px;
   }
 
-  .column-section{
-    .subtitle{
+  .column-section {
+    .subtitle {
       font-family: $inter;
-      font-weight:300;
+      font-weight: 300;
       font-size: 18px;
       color: #414141;
       letter-spacing: -0.1px;
       line-height: 2px;
-      margin-top:20px;
-      max-width:880px;
-      line-height:1.25em;
+      margin-top: 20px;
+      max-width: 880px;
+      line-height: 1.25em;
     }
   }
 }
