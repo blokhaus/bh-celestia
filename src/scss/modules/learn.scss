@@ -64,19 +64,19 @@
   .col {
     &:nth-child(3n+1) {
       .learn-box {
-        background: url(../images/learn-bg1.png) no-repeat scroll top left #ffffff;
+        // background: url(../images/learn-bg1.png) no-repeat scroll top left #ffffff;
       }
     }
 
     &:nth-child(3n+2) {
       .learn-box {
-        background: url(../images/learn-bg2.png) no-repeat scroll bottom right #ffffff;
+        // background: url(../images/learn-bg2.png) no-repeat scroll bottom right #ffffff;
       }
     }
 
     &:nth-child(3n+0) {
       .learn-box {
-        background: url(../images/learn-bg3.png) no-repeat scroll top left #ffffff;
+        // background: url(../images/learn-bg3.png) no-repeat scroll top left #ffffff;
       }
     }
   }

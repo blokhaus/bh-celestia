@@ -9,7 +9,7 @@
 		height: 100%;
 		content: "";
 		z-index: -1;
-		background: url(../images/BG/homepage-bg.png) no-repeat scroll top center transparent;
+		// background: url(../images/BG/homepage-bg.png) no-repeat scroll top center transparent;
 		background-size: 1900px;
 
 		@media (max-width: 1199.98px) {
@@ -28,7 +28,7 @@
 		}
 
 		@media (max-width: 575.98px) {
-			background: url(../images/BG/homepage-bg-mobile.png) no-repeat scroll top center transparent;
+			// background: url(../images/BG/homepage-bg-mobile.png) no-repeat scroll top center transparent;
 			background-size: 1180px;
 			background-position: 30% top;
 			top: -390px;

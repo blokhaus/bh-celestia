@@ -1,7 +1,7 @@
 .what-is-tia {
 	position: relative;
 	z-index: 1;
-	background: url(../images/BG/technology.png) no-repeat scroll top 500px right transparent;
+	// background: url(../images/BG/technology.png) no-repeat scroll top 500px right transparent;
 
 	@media (max-width: 1199.98px) {
 		background-position: top 320px right;
@@ -63,7 +63,7 @@
 	}
 
 	&:before {
-		background: url(../images/what-is-tia/what-is-tia-1.png) no-repeat scroll top right transparent;
+		// background: url(../images/what-is-tia/what-is-tia-1.png) no-repeat scroll top right transparent;
 		background-size: contain;
 		top: 30px;
 		right: 0;

@@ -13,8 +13,6 @@ import { seoContent } from "../datas/what-is-tia/seoContent";
 import Seo from "../components/seo";
 import Image from "../components/imageComponent";
 
-import image1 from "../images/what-is-tia/what-is-tia-custody-1.png";
-
 const WhatIsTIA = () => {
 	return (
 		<Layout footerBoxes={FooterBoxes}>
@@ -121,7 +119,7 @@ const WhatIsTIA = () => {
 								</div>
 								<div className={"image-box--node col-12 col-lg-6 order-0 order-lg-1"}>
 									<div className='image-wrapper'>
-										<img className='img' style={{ width: `100%`, maxWidth: `470px` }} src={image1} alt={""} />
+										placeholder image
 									</div>
 								</div>
 							</div>

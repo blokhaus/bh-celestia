@@ -1,7 +1,5 @@
 import React from 'react';
 
-import contactIcon from "../../images/svg/contact.svg";
-
 const ContactSection = () => {
     return (
         <section className={'contact-section'}>
@@ -11,7 +9,7 @@ const ContactSection = () => {
                         <div className={'col-12 col-md-auto'}>
                             <div className={'row flex-md-nowrap align-items-center'}>
                                 <div className={'col-12 col-md-auto'}>
-                                    <img src={contactIcon} alt="Contact"/>
+                                    placeholder image
                                 </div>
                                 <div className={'col-12 col-md-auto pt-3 pt-md-0'}>
                                     <div className={'title'}>Explore your options</div>

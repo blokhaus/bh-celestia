@@ -8,11 +8,6 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { seoContent } from "../datas/what-is-celestia/seoContent";
 import Seo from "../components/seo";
 
-import celestia_tell_me_about_celestia from "../images/what-is-celestia/celestia-tell-me-about-celestia.png";
-import data_availability_sampling from "../images/what-is-celestia/celestia-data-availability-sampling.png";
-import celestia_data_availability from "../images/what-is-celestia/celestia-data-availability.png";
-import celestia_what_is_modular from "../images/what-is-celestia/celestia-what-is-modular.png";
-
 const WhatIsCelestia = () => {
 	const [showTocCategories, setShowTocCategories] = useState(false);
 	const [selectedItem, setSelectedItem] = useState(0);
@@ -134,7 +129,7 @@ const WhatIsCelestia = () => {
 										</div>
 										<div className={"order-lg-1 image-box--different col-12 col-lg-6"}>
 											<div className='image-wrapper'>
-												<img className='img' style={{ width: `100%` }} src={celestia_tell_me_about_celestia} alt={""} />
+												placeholder image
 											</div>
 										</div>
 									</div>
@@ -178,7 +173,7 @@ const WhatIsCelestia = () => {
 											</div>
 										</div>
 										<div className={"image-box--why order-1 order-md-2 col-sm-12 col-md-7 col-lg-6 col-xl-7"}>
-											<StaticImage
+											{/* <StaticImage
 												className={"d-md-none d-block"}
 												quality={100}
 												placeholder={"none"}
@@ -189,7 +184,7 @@ const WhatIsCelestia = () => {
 												quality={100}
 												placeholder={"none"}
 												src='../images/what-is-celestia/celestia-infographics-paths.png'
-											/>
+											/> */}
 										</div>
 									</div>
 									<div className='link-wrapper'>
@@ -222,7 +217,7 @@ const WhatIsCelestia = () => {
 									<div className={"row justify-content-between align-items-center"}>
 										<div className={"image-box--analogy order-2 order-lg-1 col-12 col-lg-6"}>
 											<div className='image-wrapper'>
-												<img className='img' style={{ width: `100%` }} src={celestia_data_availability} alt={""} />
+												placeholder image
 											</div>
 										</div>
 										<div className={"col-12 order-1 order-lg-2 col-lg-6 mb-3 mb-lg-0"}>
@@ -250,7 +245,7 @@ const WhatIsCelestia = () => {
 									<h2 className='title'>Now what's data availability sampling?</h2>
 									<div className={"image-box--different"}>
 										<div className='image-wrapper'>
-											<img className='img' style={{ width: `100%` }} src={data_availability_sampling} alt={""} />
+											placeholder image
 										</div>
 									</div>
 									<p>
@@ -272,7 +267,7 @@ const WhatIsCelestia = () => {
 									<h2 className='title'>And what is a modular blockchain?</h2>
 									<div className={"image-box--different"}>
 										<div className='image-wrapper'>
-											<img className='img' style={{ width: `100%` }} src={celestia_what_is_modular} alt={""} />
+											placeholder image
 										</div>
 									</div>
 									<p>

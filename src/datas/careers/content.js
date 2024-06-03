@@ -1,8 +1,3 @@
-import perkAnimation1 from "../../images/illustrations/career-1/data.json";
-import perkAnimation2 from "../../images/illustrations/career-2/data.json";
-import perkAnimation3 from "../../images/illustrations/career-3/data.json";
-import perkAnimation4 from "../../images/illustrations/career-4/data.json";
-
 export const content = {
 	title: "Careers",
 	subtitle:
@@ -18,22 +13,18 @@ export const content = {
 			{
 				title: "Employment benefits",
 				image: "careers/careers-1.svg",
-				animation: perkAnimation1,
 			},
 			{
 				title: "4 weeks annual vacation",
 				image: "careers/careers-2.svg",
-				animation: perkAnimation2,
 			},
 			{
 				title: "Meaningful long-term compensation package",
 				image: "careers/careers-3.svg",
-				animation: perkAnimation3,
 			},
 			{
 				title: "Flexible and remote work environment",
 				image: "careers/careers-4.svg",
-				animation: perkAnimation4,
 			},
 		],
 	},

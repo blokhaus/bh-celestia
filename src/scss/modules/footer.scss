@@ -8,7 +8,7 @@ footer {
 
 	&::before {
 		content: "";
-		background: url(../images/footer-bg.png) no-repeat scroll center bottom transparent;
+		// background: url(../images/footer-bg.png) no-repeat scroll center bottom transparent;
 		background-size: 100% 1200px;
 		height: 100%;
 		width: 100%;
@@ -95,7 +95,7 @@ footer {
 				}
 
 				.inner {
-					background-image: url(../images/footer-box-1.svg);
+					// background-image: url(../images/footer-box-1.svg);
 					background-size: 40%;
 
 					@media (max-width: 991.98px) {
@@ -119,7 +119,7 @@ footer {
 				}
 
 				.inner {
-					background-image: url(../images/footer-box-2.svg);
+					// background-image: url(../images/footer-box-2.svg);
 					background-size: 60%;
 
 					@media (max-width: 991.98px) {
@@ -138,7 +138,7 @@ footer {
 					left: -5px;
 					right: -5px;
 					bottom: -5px;
-					background-image: url(../images/footer-box-bg.png);
+					// background-image: url(../images/footer-box-bg.png);
 					background-repeat: no-repeat;
 				}
 			}
@@ -286,7 +286,7 @@ footer {
 						}
 
 						.inner {
-							background-image: url(../images/footer-box2-1.png);
+							// background-image: url(../images/footer-box2-1.png);
 							background-size: 30%;
 							display: flex;
 							flex-direction: column;
@@ -316,7 +316,7 @@ footer {
 						}
 
 						.inner {
-							background-image: url(../images/footer-box2-2.png);
+							// background-image: url(../images/footer-box2-2.png);
 							background-size: 30%;
 
 							@media (max-width: 991.98px) {
