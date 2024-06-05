@@ -51,12 +51,12 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-sharp`,
 			options: {
-				defaults: {
-					formats: [`auto`, `webp`],
-					quality: 100,
-					backgroundColor: `transparent`,
-					placeholder: `none`,
-				},
+				// Enable base64 placeholders for images
+				base64Width: 20,
+				forceBase64Format: `webp`,
+				useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+				stripMetadata: true,
+				defaultQuality: 75,
 			},
 		},
 		{

@@ -2,7 +2,6 @@ import React from "react";
 import Image from "./imageComponent";
 
 const Ecosystem = ({ ecosystem }) => {
-	console.log(ecosystem);
 	return (
 		<a href={ecosystem.url} target={"_blank"} rel={"noreferrer"} aria-label={ecosystem.title}>
 			<div className={"ecosystem d-flex flex-column"}>

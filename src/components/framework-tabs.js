@@ -7,8 +7,6 @@ const FrameworkTabs = ({ content, categories, anchorId, section }) => {
 
 	const allUniqueCategories = [...new Set(categories.items.flatMap((item) => item.category))];
 
-	console.log(allUniqueCategories);
-
 	return (
 		<section className='frameworks' id={`${content.items[anchorId].title.replace(/\s+/g, "-").toLowerCase()}`}>
 			<div className={"container"}>

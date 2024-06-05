@@ -10,7 +10,7 @@ export default function Template({
 	data, // this prop will be injected by the GraphQL query below
 }) {
 	const { frontmatter, html } = data.markdownRemark;
-	console.log("data!!! ", data)
+
 	return (
 		<Layout>
 			<Seo title={frontmatter.title} description={frontmatter.description} />
