@@ -1,9 +1,7 @@
 import * as React from "react";
-import Image from "../imageComponent";
 import { Link } from "gatsby";
-import Lottie from "lottie-react";
-import { useEffect, useMemo, useRef, useState } from "react";
-import handleViewport, { useInViewport } from "react-in-viewport";
+import { useRef } from "react";
+import { useInViewport } from "react-in-viewport";
 
 const TwoColumnH2 = ({
 	className,

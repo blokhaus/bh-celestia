@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Layout from "../components/layout";
 import { FooterBoxes2 } from "../datas/what-is-celestia/content";
 import { tableOfContent } from "../datas/what-is-celestia/toc";
-import { StaticImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 import { seoContent } from "../datas/what-is-celestia/seoContent";

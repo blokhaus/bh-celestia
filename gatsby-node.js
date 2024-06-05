@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 exports.createPages = async ({ graphql, actions }) => {
 	const { createRedirect } = actions;
 
@@ -12,4 +14,32 @@ exports.createPages = async ({ graphql, actions }) => {
 		toPath: `/build`,
 		isPermanent: true,
 	});
+
+	const { createPage } = actions
+	const result = await graphql(`
+	  {
+		allMarkdownRemark {
+		  edges {
+			node {
+			  frontmatter {
+				template
+				slug
+			  }
+			}
+		  }
+		}
+	  }
+	`)
+
+	result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+		if (node.frontmatter.slug) {
+			createPage({
+				path: node.frontmatter.slug,
+				component: path.resolve(`./src/templates/${node.frontmatter.template ? node.frontmatter.template : 'defaultTemplate'}.js`),
+				context: {
+					slug: node.frontmatter.slug,
+				},
+			})
+		}
+	})
 };

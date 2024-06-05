@@ -87,6 +87,13 @@ module.exports = {
 				path: `${__dirname}/src/pages/markdown-pages`,
 			},
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `glossary`,
+				path: `${__dirname}/src/content/glossary`,
+			},
+		},
 		"gatsby-plugin-react-helmet",
 		"gatsby-plugin-sitemap",
 		{
