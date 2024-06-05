@@ -9,7 +9,7 @@ import TocGroup from "../components/modules/toc-groups";
 import { Helmet } from "react-helmet";
 import ToC from "../components/modules/toc";
 
-const toc = require("../pages/markdown-pages/learn/_toc.json");
+const toc = require("../content/learn/_toc.json");
 
 export default function Template({
 	data,
